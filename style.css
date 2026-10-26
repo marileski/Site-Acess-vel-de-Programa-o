@@ -1,0 +1,167 @@
+@import url('https://googleapis.com');
+
+/* VARIÁVEIS E RESET MODIFICADOS */
+:root {
+  --bg-color: #eec4dc;       /* Rosa bem clarinho pastel */
+  --text-color: #a53e76;     /* Marrom/roxo escuro para contrastar com o rosa */
+  --card-bg: #ffffff;        /* Fundo dos cartões branco */
+  --primary-color: #e2619f;   /* Rosa chiclete fofo principal */
+  --secondary-color: #d24787; /* Rosa mais escurinho para botões e menus */
+  --font-size: 16px;
+}
+
+/* Modo escuro adaptado para a paleta rosa */
+body.dark-mode {
+  --bg-color: #7f3667;       /* Rosa escuro quase preto */
+  --text-color: #e27bb1;     /* Texto rosa bem claro */
+  --card-bg: #3a222e;        /* Cartões rosa escuro */
+  --primary-color: #3a222e;   /* Rosa vivo */
+  --secondary-color: #e27bb1; /* Rosa mais intenso */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Fredoka', 'Arial', sans-serif; /* Fonte muito mais fofa e arredondada */
+  font-size: var(--font-size);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.8; /* Aumentado para dar mais leveza na leitura */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* BARRA DE ACESSIBILIDADE */
+.accessibility-bar {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 0.8rem 1.5rem; /* Aumentado o espaçamento */
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.accessibility-bar button {
+  background: #fff;
+  color: var(--secondary-color); /* Botão combina com o tema */
+  border: none;
+  padding: 0.5rem 1rem; /* Mais espaçamento interno */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 20px; /* Bordas muito mais arredondadas e fofas */
+  font-family: 'Fredoka', sans-serif;
+}
+
+.accessibility-bar button:focus,
+a:focus {
+  outline: 3px solid #ffb3c6;
+}
+
+/* HEADER E NAVEGAÇÃO */
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 3rem 1.5rem; /* Aumentado consideravelmente para dar destaque */
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+}
+
+nav {
+  background-color: var(--secondary-color);
+  padding: 0.8rem; /* Mais espaçamento */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 25px; /* Mais espaço entre os links */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.6rem 1rem;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px; /* Efeito fofo ao passar o mouse */
+  text-decoration: none;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+  max-width: 900px;
+  margin: 3rem auto; /* Mais espaçamento acima e abaixo do conteúdo */
+  padding: 0 1.5rem;
+}
+
+section {
+  background-color: var(--card-bg);
+  margin-bottom: 3rem; /* Mais espaço separando as seções */
+  padding: 2.5rem; /* Mais espaçamento interno nos textos */
+  border-radius: 20px; /* Cantos muito mais arredondados */
+  box-shadow: 0 4px 15px rgba(255, 141, 161, 0.15); /* Sombra suave em tom rosa */
+}
+
+h1, h2, h3 {
+  margin-bottom: 1.5rem; /* Mais espaço abaixo dos títulos */
+  color: var(--secondary-color); /* Títulos em destaque rosa */
+}
+
+.img-container {
+  text-align: center;
+  margin: 2rem 0; /* Mais espaço ao redor da imagem */
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px; /* Imagem com cantos fofos */
+  border: 4px solid var(--primary-color); /* Bordinha rosa charmosa */
+}
+
+pre {
+  background-color: #2b1620; /* Fundo do código combinando com o tema escuro */
+  color: #ffe3ec;
+  padding: 1.5rem;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+/* RODAPÉ */
+footer {
+  background-color: var(--secondary-color);
+  color: #fff;
+  text-align: center;
+  padding: 2rem; /* Mais espaçamento */
+  margin-top: 4rem;
+}
+
+/* BOTÃO VOLTAR AO TOPO */
+#btn-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
