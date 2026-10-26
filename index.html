@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pensamento Computacional para Todos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="accessibility-bar" role="region" aria-label="Controles de Acessibilidade">
+    <button onclick="changeFontSize(1)" aria-label="Aumentar tamanho do texto">A+</button>
+    <button onclick="changeFontSize(-1)" aria-label="Diminuir tamanho do texto">A-</button>
+    <button onclick="toggleDarkMode()" aria-label="Alternar modo claro e escuro">Modo Escuro</button>
+  </div>
+
+  <header>
+    <h1>Pensamento Computacional para Todos</h1>
+    <p>Desmistificando a resolução de problemas para a sociedade</p>
+  </header>
+
+  <nav aria-label="Navegação principal">
+    <ul>
+      <li><a href="#introducao">Introdução</a></li>
+      <li><a href="#decomposicao">Decomposição</a></li>
+      <li><a href="#padroes">Reconhecimento de Padrões</a></li>
+      <li><a href="#abstracao">Abstração</a></li>
+      <li><a href="#algoritmos">Algoritmos</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="introducao">
+      <h2>1. Introdução ao Pensamento Computacional</h2>
+      <p><strong>O que é?</strong> O pensamento computacional (PC) não se resume a saber programar ou a entender computadores. Trata-se de uma forma de pensar a resolução de problemas de maneira sistemática e eficiente. Essa abordagem faz uso de habilidades como a decomposição de problemas
+complexos em partes menores e mais gerenciáveis, o reconhecimento de padrões e a busca
+de similaridades a partir de experiências anteriores, a abstração de conceitos para simplificação de ideias e estratégias de solução e o desenvolvimento de algoritmos e processos
+com o passo-a-passo das soluções elaboradas. Em outras palavras, o pensamento computacional busca entender e criar soluções de maneira organizada, lógica e estruturada.</p>
+      
+      <div class="img-container">
+    <img src="https://diarioescola.com.br/wp-content/uploads/2019/05/PC-brain2.jpg" alt="Ilustração mostrando engrenagens e um cérebro conectado a símbolos lógicos.">
+
+      </div>
+
+      <h3>Importância na Escola e Sociedade</h3>
+      <p>Ele desenvolve a capacidade crítica, o raciocínio lógico e a criatividade, preparando os estudantes não apenas para programar, mas para estruturar desafios complexos em qualquer área da vida.</p>
+
+      <h3>Onde é Utilizado?</h3>
+      <p>Na engenharia, medicina, planejamento urbano, ciência de dados, artes e nas tarefas cotidianas de tomada de decisão.</p>
+    </section>
+
+    <section id="decomposicao">
+      <h2>2. Decomposição</h2>
+      <p><strong>Definição:</strong> É o processo de quebrar um problema ou sistema complexo em partes menores e mais fáceis de gerenciar.</p>
+      
+      <h3>Exemplo do Cotidiano</h3>
+      <p>Organizar uma festa: em vez de tentar fazer tudo de uma vez, divide-se a tarefa em convites, comida, decoração e música.</p>
+
+      <h3>Exemplo na Informática</h3>
+      <p>Ao criar um aplicativo de e-commerce, o desenvolvimento é dividido em módulos: cadastro de usuários, catálogo de produtos, carrinho e sistema de pagamentos.</p>
+    </section>
+
+    <section id="padroes">
+      <h2>3. Reconhecimento de Padrões</h2>
+      <p><strong>Definição:</strong> Consiste em identificar semelhanças, tendências ou regularidades em dados e problemas.</p>
+      
+      <h3>Exemplo do Cotidiano</h3>
+      <p>Previsão do tempo: notar que quando o céu fica escuro e o vento forte aumenta, há grande probabilidade de chover.</p>
+
+      <h3>Exemplo na Programação</h3>
+      <p>Identificar repetições de lógica em um programa para criar funções reutilizáveis, reduzindo código duplicado.</p>
+    </section>
+
+    <section id="abstracao">
+      <h2>4. Abstração</h2>
+      <p><strong>Definição:</strong> É o ato de focar apenas nos detalhes importantes, ignorando as informações irrelevantes para a solução do problema.</p>
+      
+      <h3>Exemplo</h3>
+      <p>Um mapa de metrô: ele não mostra a topografia do terreno ou os prédios da cidade, apenas as linhas e estações necessárias para a viagem.</p>
+
+      <h3>Importância</h3>
+      <p>Permite reduzir a complexidade e trabalhar com modelos mentais mais simples e eficientes.</p>
+    </section>
+
+    <section id="algoritmos">
+      <h2>5. Elaboração de Algoritmos</h2>
+      <p><strong>Definição:</strong> É a criação de uma sequência passo a passo de instruções detalhadas para resolver um problema.</p>
+      
+      <h3>Como funciona?</h3>
+      <p>Cria-se uma ordem lógica e finita de passos que deve ser seguidos rigorosamente até atingir o objetivo desejado.</p>
+
+      <h3>Exemplo em Linguagem Natural (Receita para Fazer Chá)</h3>
+      <ol>
+        <li>Ferver a água.</li>
+        <li>Colocar o sachê na xícara.</li>
+        <li>Despejar a água quente.</li>
+        <li>Aguardar 3 minutos.</li>
+        <li>Retirar o sachê e servir.</li>
+      </ol>
+
+      <h3>Exemplo em Pseudocódigo</h3>
+      <pre><code>INICIO
+  VARIAVEL aguaFervendo = Verdadeiro
+  SE aguaFervendo ENTAO
+    Exibir "Servir o chá"
+  SENAO
+    Exibir "Aguardar a água ferver"
+  FIM SE
+FIM</code></pre>
+    </section>
+
+  </main>
+
+  <button id="btn-top" onclick="scrollToTop()" aria-label="Voltar ao topo da página">↑ Topo</button>
+
+  <footer>
+    <p>Desenvolvido por: Mariane Santos Terleski  </p>
+    <p>Projeto para a disciplina de Programação- 2k26</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
